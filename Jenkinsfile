@@ -12,13 +12,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git branch: 'main',
-                url: 'https://github.com/binirosemaria/Java.git'
-            }
-        }
-
         stage('Build Maven Artifact') {
             steps {
                 sh 'mvn clean package'
