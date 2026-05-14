@@ -6,7 +6,7 @@ pipeline {
         DOCKER_TAG      = "${env.BUILD_NUMBER}"
 
         // Minikube Server Details
-        MINIKUBE_SERVER = "10.0.1.155"
+        MINIKUBE_SERVER = "13.208.245.122"
         MINIKUBE_USER   = "ec2-user"
     }
 
