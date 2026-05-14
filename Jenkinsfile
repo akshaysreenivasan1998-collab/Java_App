@@ -55,7 +55,7 @@ pipeline {
                     # Create manifest directory on Minikube server
                     ssh -o StrictHostKeyChecking=no \
                     ${MINIKUBE_USER}@${MINIKUBE_SERVER} \
-                    'sudo mkdir -p /home/${MINIKUBE_USER}/manifest'
+                    'mkdir -p /home/${MINIKUBE_USER}/manifest'
 
                     # Copy Kubernetes manifests
                     scp -o StrictHostKeyChecking=no \
